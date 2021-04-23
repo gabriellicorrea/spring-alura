@@ -67,7 +67,6 @@ public class TopicosController {
 			return ResponseEntity.ok(new DetalhesDoTopicoDto(topico.get()));
 
 		}
-		
 		return ResponseEntity.notFound().build();
 	}
 	
@@ -79,7 +78,6 @@ public class TopicosController {
 			Topico topico = form.atualizar(id, topicoRepository);
 			return ResponseEntity.ok(new TopicoDto(topico));
 		}
-		
 		return ResponseEntity.notFound().build();
 	}
 
